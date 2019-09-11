@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<script type="text/javascript" src="main.js"></script>
+<style>
+   .design {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table {
+        border: 1px solid black;
+    }
+    .design td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    .design th{
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .design tr:nth-child(even){background-color: #f2f2f2;}
+    
+    .design tr:hover {background-color: #ddd;}
+    
+  .design th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: rgb(58, 64, 148);
+      color: white;
+    }
+    </style>
+</head>
+
+<body>
+<div class="div">
+    <input type="text" size="35"  id="name" placeholder="Enter GIT user name"  value="tavisca-ksingh"/>
+    <button onclick="submit()">Submit</button>
+</div>
+<div class="design">
+        <h1>Important List</h1>
+ <table >
+     
+    <tr><th>Id</th>  <th>Repos Name</th> <th>Repos full_name</th><th>language</th> <th>Owner</th></tr>
+ </table>
+</div>
+<div id="imp" class="design">
+    <table id="impTable">
+
+    </table>
+</div>
+</br>
+</br>
+</br>
+<h1>Git Repos</h1>
+<div id="data" class="design">
+        
+</div>
+
+    
+</body>
+
+</html>
